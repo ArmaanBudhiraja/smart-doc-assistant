@@ -113,6 +113,8 @@ npm run dev
 http://localhost:3000
 ```
 
+---
+
 ## 🧪 How It Works (RAG Flow)
 1. User uploads a PDF
 
