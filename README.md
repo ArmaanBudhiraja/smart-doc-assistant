@@ -1,7 +1,7 @@
-# 📄 DocuMind  
+# 📄 ThinkPDF 
 ### Chat with your documents. Instantly.
 
-DocuMind is an AI-powered **Retrieval-Augmented Generation (RAG)** application that allows users to upload PDF documents and ask natural language questions about them. The system generates accurate, context-aware answers grounded strictly in the content of the uploaded document.
+ThinkPDF is an AI-powered **Retrieval-Augmented Generation (RAG)** application that allows users to upload PDF documents and ask natural language questions about them. The system generates accurate, context-aware answers grounded strictly in the content of the uploaded document.
 
 The application is built using a **local LLM (LLaMA 3 8B)**, ensuring privacy, offline capability, and full control over data — with no reliance on external AI APIs.
 
