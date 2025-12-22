@@ -53,6 +53,7 @@ graph TD
     F --> G
     G --> H
     H -.->|Response| C
+```
 ---
 
 ## 🧠 Tech Stack
