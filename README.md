@@ -91,6 +91,25 @@ ollama pull llama3:8b
 cd backend
 pip install -r requirements.txt
 ```
-
-
+### Start the backend server:
+```bash
 uvicorn main:app --reload
+```
+### Backend will be available at: 
+```bash
+http://127.0.0.1:8000
+```
+
+### 4️⃣ Frontend Setup
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+### Frontend will be available at:
+```bash
+http://localhost:3000
+```
+
