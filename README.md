@@ -31,8 +31,7 @@ The application is built using a **local LLM (LLaMA 3 8B)**, ensuring privacy, o
 
 ### System Architecture
 
-```mermaid
-graph TD
+```graph TD
     subgraph Frontend ["Frontend (Next.js)"]
         A[PDF Upload]
         B[Chat UI]
