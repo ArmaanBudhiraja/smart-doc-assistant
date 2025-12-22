@@ -32,14 +32,23 @@ The application is built using a **local LLM (LLaMA 3 8B)**, ensuring privacy, o
 ## 🏗️ System Architecture
 
 Frontend (Next.js)
+
 │
+
 ├── PDF Upload
+
 ├── Chat UI
+
 │
+
 └── API Calls
+
       ↓
+
 Backend (FastAPI)
+
 │
+
 ├── PDF Ingestion
 ├── Text Chunking
 ├── Embeddings (Sentence Transformers)
@@ -153,4 +162,5 @@ B.Tech Computer Science & Engineering
 Vellore Institute of Technology, Vellore
 
 GitHub: https://github.com/ArmaanBudhiraja
+
 LinkedIn: https://linkedin.com/in/armaanbudhiraja
