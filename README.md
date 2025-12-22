@@ -131,3 +131,26 @@ http://localhost:3000
 7. LLaMA 3 generates an answer using retrieved context
 
 8. Answer and sources are returned to the UI
+
+---
+
+### 🔐 Privacy & Security
+
+- No external API calls
+
+- No document data stored permanently
+
+- Fully local inference
+
+- Suitable for sensitive documents
+
+---
+
+### 👨‍💻 Author
+
+Armaan Budhiraja
+B.Tech Computer Science & Engineering
+Vellore Institute of Technology, Vellore
+
+GitHub: https://github.com/ArmaanBudhiraja
+LinkedIn: https://linkedin.com/in/armaanbudhiraja
