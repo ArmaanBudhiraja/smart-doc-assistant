@@ -4,3 +4,5 @@ brew install ollama
 brew services start ollama 
 ollama pull llama3:8b
 ```
+
+uvicorn main:app --reload
