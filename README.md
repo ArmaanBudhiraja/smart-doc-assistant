@@ -113,3 +113,19 @@ npm run dev
 http://localhost:3000
 ```
 
+## 🧪 How It Works (RAG Flow)
+1. User uploads a PDF
+
+2. Text is extracted and chunked
+
+3. Chunks are converted into embeddings
+
+4. Embeddings are stored in FAISS
+
+5. User asks a question
+
+6. Relevant chunks are retrieved via semantic search
+
+7. LLaMA 3 generates an answer using retrieved context
+
+8. Answer and sources are returned to the UI
