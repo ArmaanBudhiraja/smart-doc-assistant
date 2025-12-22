@@ -29,7 +29,6 @@ The application is built using a **local LLM (LLaMA 3 8B)**, ensuring privacy, o
 
 ---
 
-```markdown
 ### System Architecture
 
 ```mermaid
