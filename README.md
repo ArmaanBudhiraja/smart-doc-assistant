@@ -29,32 +29,31 @@ The application is built using a **local LLM (LLaMA 3 8B)**, ensuring privacy, o
 
 ---
 
-## 🏗️ System Architecture
+```markdown
+### System Architecture
 
-Frontend (Next.js)
+```mermaid
+graph TD
+    subgraph Frontend ["Frontend (Next.js)"]
+        A[PDF Upload]
+        B[Chat UI]
+        C[API Calls]
+    end
 
-│
+    subgraph Backend ["Backend (FastAPI)"]
+        D[PDF Ingestion]
+        E[Text Chunking]
+        F[Embeddings <br/>(Sentence Transformers)]
+        G[Vector Store <br/>(FAISS)]
+        H[LLaMA 3 <br/>(Answer Generation)]
+    end
 
-├── PDF Upload
-
-├── Chat UI
-
-│
-
-└── API Calls
-
-      ↓
-
-Backend (FastAPI)
-
-│
-
-├── PDF Ingestion
-├── Text Chunking
-├── Embeddings (Sentence Transformers)
-├── Vector Store (FAISS)
-└── LLaMA 3 (Answer Generation)
-
+    C -->|Request| D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H -.->|Response| C
 ---
 
 ## 🧠 Tech Stack
