@@ -5,3 +5,7 @@ faiss-cpu
 pymupdf
 python-multipart
 requests
+python-dotenv
+transformers
+torch
+
