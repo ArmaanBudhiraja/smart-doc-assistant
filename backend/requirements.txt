@@ -1,11 +1,9 @@
-fastapi
 uvicorn
-sentence-transformers
+fastapi 
+sentence-transformers 
 faiss-cpu
 pymupdf
 python-multipart
 requests
 python-dotenv
 transformers
-torch
-
