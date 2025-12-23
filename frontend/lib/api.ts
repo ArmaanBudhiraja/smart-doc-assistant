@@ -1,10 +1,10 @@
-const BACKEND_URL = "http://127.0.0.1:8000";
+const API_URL = process.env.NEXT_PUBLIC_API_URL!;
 
 export async function uploadPDF(file: File) {
   const formData = new FormData();
   formData.append("file", file);
 
-  const res = await fetch(`${BACKEND_URL}/upload`, {
+  const res = await fetch(`${API_URL}/upload`, {
     method: "POST",
     body: formData,
   });
@@ -17,7 +17,7 @@ export async function uploadPDF(file: File) {
 }
 
 export async function askQuestion(question: string) {
-  const res = await fetch(`${BACKEND_URL}/ask`, {
+  const res = await fetch(`${API_URL}/ask`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ question }),

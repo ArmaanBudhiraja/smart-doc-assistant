@@ -1,1 +1,29 @@
 [00:00:01.687] Server  LOG     ✓ Ready in 1483ms
+[00:39:14.268] Server  LOG       Reload env: .env
+[00:39:45.625] Server  LOG       Reload env: .env
+[00:46:19.896] Server  LOG       Reload env: .env
+[00:47:43.874] Server  LOG     ✓ Compiled in 61ms
+[00:47:44.054] Browser ERROR   ./lib/api.ts:30:23
+Ecmascript file had an error
+  28 | }
+  29 |
+> 30 | export async function askQuestion(question: string) {
+     |                       ^^^^^^^^^^^
+  31 |   const res = await fetch(`${BACKEND_URL}/ask`, {
+  32 |     method: "POST",
+  33 |     headers: { "Content-Type": "application/json" },
+
+the name `askQuestion` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./lib/api.ts [Client Component Browser]
+    ./components/PdfUpload.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/api.ts [Client Component SSR]
+    ./components/PdfUpload.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
